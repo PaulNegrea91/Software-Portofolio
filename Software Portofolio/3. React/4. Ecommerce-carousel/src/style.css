@@ -1,0 +1,43 @@
+@import 'swiper/swiper-bundle.css';
+
+body {
+  font-family: Garamond, Georgia, Times, 'Times New Roman', serif , Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: #FFFFF0;
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar {
+  height: 30px;
+  width: 100%;
+  background-color: #FFD580;
+  overflow: hidden;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  top: 0;
+  z-index: 1000;
+}
+
+.announcement {
+  display: inline-block;
+  white-space: nowrap;
+  top: 0;
+  animation: marquee 15s linear infinite;
+  font-weight: bold;
+  color: #000000;
+  z-index: 1000;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
